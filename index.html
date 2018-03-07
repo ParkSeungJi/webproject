@@ -224,10 +224,11 @@ $(".navi>a").click(function(){
        $("#gnb").show(100);
        $("#gnb").animate({left:"0"});
    }else if(poi == "block"){
-   $("#gnb").show(100);
        $("#gnb").animate({left:"-100%"});
        $("#gnb").fadeOut(200);
+       $(".depth2").slideUp();
    }
+   return false;
 });
 
 
@@ -258,7 +259,7 @@ $("#gnb>ul>li>a").click(function(){
             $(this).removeClass("on")
         }
         } */
-
+        return false;
     });
   /* 좋아요버튼 */
     $(".btn>span.good").click(function(){
@@ -302,6 +303,12 @@ $("#gnb>ul>li>a").click(function(){
         }else if(two == "block"){
             dis.slideUp();
         } 
+        return false;
+    });
+
+    $("#gall1 a").click(function(){
+        $(this).find(".conts").slideToggle();
+        return false;
     });
 </script>
 </html>

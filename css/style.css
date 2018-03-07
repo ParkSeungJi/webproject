@@ -70,6 +70,7 @@ header, main, footer{
     height:100%;
     background:beige;
     display: none;
+    z-index: 999;
 }
 
 #gnb>ul>li>a{
@@ -323,4 +324,8 @@ footer{
     margin:0 auto;
     top:50%;
     transform: translateY(-50%);
+}
+
+.conts{
+    display:none;
 }
