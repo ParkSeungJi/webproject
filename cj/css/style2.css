@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* All Mobile Code */
+
+html, body{
+    font-size:14px;
+    line-height: 21px;
+    font-family: sans-serif;
+
+}
+
+.box{
+    font-size:0.8rem;/* 11px */
+}
+
+.box>a{
+    font-size:2rem; /* 28px */
+}
+
+
+
+@media all and (min-width:768px){
+
+ 
+        
+}
+
+@media all and (min-width:1200px){
+
+
+}

@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+html, body{
+    font-size:14px;
+}
+
+header{
+    width:100%;
+    position: relative;
+    background:#5d9ab2;
+}
+
+#headerin{
+    position: relative;
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width:80px;
+}
+
+.logo>a{
+    width:100%;
+    display: block;
+    font-size: 1.714rem; /* 24px를 의미한다  */
+    color:#fff;
+    text-align:center;
+}
+
+#buttom{
+    position: relative;
+    left:-20px;
+    width:45px;
+    height: 45px;
+    cursor: pointer;
+    background:#fff;
+}
+
+#gnb{
+    position: absolute;
+    top:80px;
+    left:0;
+    width: 100%;
+    display: none;
+    z-index: 99;
+}
+
+#gnb a{
+    display:block;
+    width:100%;
+    padding:10px 0;
+    text-indent: 20px;
+    color:#fff;
+    background: #5d9ab2;
+}
+/* All mobile Code */
+
+
+
+@media all and (min-width:768px){
+
+    
+}
+
+@media all and (min-width:1200px){
+
+    #headerin{
+        width:1200px;
+        height:100px;
+        margin:0 auto;
+    }
+
+    #buttom{
+        display: none;
+    }
+
+
+        #gnb{
+            position: static; /* static > relative 나 absolute나 fixed 같은 속성을 제거  */
+            /* top,left, rigth,bottom값을 받아들이지 못함 */
+
+            position: relative;
+            width:auto; /* auto라는 것은 측정되어 있는 넓이를 기본으로 설정  */
+            display:block !important;
+            top:0; /* 모바일에서 80px라고 되어 있는 구성을 초기화시킨다. */
+            margin-left: auto; /* 오른쪽배치 */
+        
+        }
+
+
+        #gnb>ul{
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+            
+        }
+
+        #gnb a{
+            display:block;
+            width:100px;
+            padding:10px 0;
+            text-indent: 0;
+            color:#fff;
+            text-align: center;
+            background: #5d9ab2;
+            }
+}
