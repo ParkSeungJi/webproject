@@ -20,7 +20,7 @@ body{
 }
 
  a{  
-     font-family: "맑은 고딕";
+     font-family: "Orator Std";
      text-decoration:none; /*a태그 적용시 발생되는 밑줄을 제거*/
      color:black; /*글자색상을 검정색으로 표현*/
      color:#000;

@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+#wrapper{
+    width:100%;
+}
+
+header{
+    position: relative;
+    width:100%;
+    height:200px;
+}
+#logo a{
+    display: block;
+    width:320px;
+    padding:10px 0;
+    margin:0 auto;
+}
+
+#logo img{
+    width:320px;
+}
+
+#wrapper:before{
+    content:"";
+    display:block;
+    width:100%;
+    height:1px;
+    background:#a0a0a0;
+    position: relative;
+    top:155px;
+}
+#gnb{
+    width:600px;
+    margin:0 auto;
+    position: relative;
+    top:40px;
+}
+
+#gnb>ul{
+    display:flex;
+    justify-content: space-around;
+}
+main{
+    width:100%;
+}
+
+.slider>li>a>img{
+    width:60%;
+    height:auto;
+    margin:0 auto;
+}
+
+
+#intr{
+    position: relative;
+    width:100%;
+    height:830px;
+    top:200px
+}
+
+
+
+.img a{
+    display: block;
+    margin:28px auto;
+
+}
+
+
+
+#intr>ul>p{
+    width:900px;
+    margin:0 auto;
+    position: relative;
+    top:40px;
+    text-align: center;
+    line-height: 28px;
+    font-weight:400;
+    font-family: "나눔스퀘어";
+}
+
+
+.img>ul{
+    display: flex;
+    margin:0 auto;
+    position:relative;
+    top:44px;
+    justify-content: center;
+}
+
+
+#listmenu{
+    width:1850px;
+    height:auto;/* 생략가능 */
+    margin:0 auto;
+}
+
+.menu1, .menu6{
+    width:368px;
+}
+
+.menu2, .menu3, .menu4, .menu7, .menu8, .menu9{
+    width:370px;
+} 
+
+.menu5, .menu10{
+    width:372px;
+}
+
+.pinfo{
+    position:relative;
+    width:100%;
+    height:290px;
+    background:#f6f6f6;
+}
+
+.tit{
+    display: block;
+    font-size:24px;
+    font-family: "나눔스퀘어",sans-serif;
+    padding:30px 0;
+    padding-left:30px;
+}
+
+.date{
+    position: relative;
+    display:block;
+    font-family: "맑은고딕",sans-serif;
+    font-size:14px;
+    line-height:21px;
+    color:#a0a0a0;
+    padding-left:70px;
+}
+.date:before{
+    content:"";
+    display:block;
+    width:59px;
+    height:1px;
+    background:#a0a0a0;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.exp{
+    display:block;
+    font-family: "arial",sans-serif;
+    font-size:16px;
+    padding-left:70px;
+    padding-top:40px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+#listmenu>ul{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-start;/* 플렉스적용시 상하높이에 있어서 스트레치라는 값이 적용되는데
+    align-items라는 속성을 사용함으로 인하여 스트레치라는 설정이 사라지게 된다. */
+}
+
+#listmenu>ul>li:nth-child(6){
+    position: relative;
+    top:-70px;
+}
+
+#listmenu>ul>li:nth-child(8){
+    position: relative;
+    top:-160px;
+}
+#listmenu>ul>li:nth-child(9){
+    position: relative;
+    top:-60px;
+}
+
+#listmenu>ul>li:nth-child(10){
+    position: relative;
+    top:-158px;
+}
+
+footer{
+    position: relative;
+    width:100%;
+    height:664px;
+    background:url("../images/fbg.jpg")no-repeat center / cover;
+    top:200px;
+}
+
+#footerin{
+   width:100%;
+   height:664px;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+
+}
+
+#fgnb{
+    width:660px;
+}
+
+#fgnb>ul>li{
+    display:flex;
+    width:660px;
+}
+
+#fgnb>ul>li>p{
+    width:132px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+#fdepth2{
+    display:flex;
+    width:660px;
+    font-size: 14px;
+}
+
+#fgnb p, #fdepth2 a{
+    display: block;
+    width:132px;
+    height:28px;
+    line-height: 28px;
+    font-family: "나눔스퀘어";
+    text-align: center;
+}
+
+.rel{
+    text-align: center;
+    font-size: 14px;
+}
+
+#finfo{
+    font-size: 14px;
+    text-align: center;
+}
+
+.et{
+    display: block;
+    font-family: "Orator Std";
+}
+.copylight{
+    line-height: 20px;
+    margin:20px 0 0 0;
+}
+#footerin:after{
+    content:"";
+    display:block;
+    width:100%;
+    height:1px;
+    background:#a0a0a0;
+    position: relative;
+    top:-200px;     
+}
+#finfo{
+    width:780px;
+    font-family: "나눔스퀘어";
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: 600px;
+    position: relative;
+    top:35px;
+    line-height: 26px;
+}
+
+select{
+    width:176px;
+    height:30px;
+    border:1px solid gray;
+    background: none;
+    padding-left:10px;
+    font-size:14px;
+    color:dimgray;
+}

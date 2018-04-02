@@ -17,6 +17,7 @@
  이때 a(alpha)의 값을 활용하여 투명도를 적용할 수 있다. 0~1, 중간값은 0.1~0.9 */
 body{
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
  a{  
